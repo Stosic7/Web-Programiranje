@@ -1,0 +1,74 @@
+body { display: flex; font-family: system-ui, sans-serif; }
+
+.bodyContainer { display: flex; flex-direction: column; gap: 16px; width: 100%; }
+
+.infoPanel { border: 1px solid #222; padding: 10px; }
+.sediste.slobodno { background: #b8f5a5; }   /* zeleno */
+.sediste.zauzeto { background: #f36a6a; }    /* crveno */
+.sediste.selektovano { outline: 2px solid #000; }
+.kriterijumiPretrage { width: 350px; border: 1px solid #222; padding: 40px; display: grid; grid-template-columns: 1fr 2fr; gap: 8px; height: fit-content; }
+
+.rezultatiPretrage {
+  flex: 1;
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.headerNaslov {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.panelWrap {
+  display: flex;
+  width: 100%;
+  border: 1px solid #222;
+  box-sizing: border-box;
+}
+
+.salaGrid {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.kupovinaKarata {
+  grid-column: 1/3;
+  text-align: center;
+  font-weight: 600;
+  margin: 4px 0px 8px 0;
+}
+
+.kupiDugme {
+  grid-column: 1/3;
+  text-align: center;
+  font-weight: 200;
+  margin: 4px 0px 6px 0px;
+
+}
+
+.redRow{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.sediste {
+   border: 1px solid #444; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   aspect-ratio: 1/1;
+   min-width: 60px;
+   font-size: 14px;
+   user-select: none; 
+   border-radius: 6px;
+  }
+
+.sediste.slobodno { background: #b8f5a5; }
+.sediste.zauzeto { background: #f36a6a; }
+.sediste.selektovano { outline: 2px solid #000; }
